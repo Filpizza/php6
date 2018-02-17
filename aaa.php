@@ -1,9 +1,7 @@
  <?php
 
 $str = "Hello Friend";
-
-echo "Bla,bla,bla";
-echo "No Bla bla bla!!!";
+print_r("345fgx");
 
 $arr1 = str_split($str);
 $arr2 = str_split($str, 1);
