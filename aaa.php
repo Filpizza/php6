@@ -2,6 +2,8 @@
 
 $str = "Hello Friend";
 
+echo "Bla,bla,bla";
+
 $arr1 = str_split($str);
 $arr2 = str_split($str, 1);
 
