@@ -1,8 +1,8 @@
  <?php
  
-````````````````````````````````NO``````````````````````````````` 
-
 $str = "Hello Friend";
+
+ABC
 
 $arr1 = str_split($str);
 $arr2 = str_split($str, 1);
