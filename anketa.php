@@ -28,7 +28,7 @@
         <label for="exampleInputSurname"><br>Your Last Name</br></label>
         <input type="text" name="lastname" maxlength="10" pattern="^[a-zA-Z]+$" class="form-control" placeholder="Last Name" required>
         <label for="exampleInputAge"><br>Your Age</br></label>
-        <br><input type="text" name="age" min="1" max="100" pattern="[0-9]{3}" maxlength="3" class="form-control" placeholder="Age" required></br>
+        <br><input type="text" name="age" min="1" max="100" maxlength="3" class="form-control" placeholder="Age" required></br>
         <button class="btn btn-lg btn-primary btn-block" type="submit" name="submit">Sign up</button>
         <br>
 </div>
