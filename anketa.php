@@ -37,9 +37,25 @@
 
   if (isset($_POST['submit'])){
 
-  $name = $_POST['name'];
-  $lastname = $_POST['lastname'];
-  $age = $_POST['age']; 
+    $name = $_POST['name'];
+    $lastname = $_POST['lastname'];
+    $age = $_POST['age'];
+
+    $db_host = "localhost";
+    $db_user = "stud";
+    $db_password = "123";
+    $db_table = "users";
+
+    $db = mysql_connect($db_host, $db_user, $db_password) OR DIE("No connect ");
+    mysql_select_db("free",$db);
+
+    $result = mysql_query ("INSERT INTO ".$db_table." (name, lastname, age) VALUES ('$name','$lastname','$age')");
+    // if ($result = 'true'){
+    //   echo "Informaciya zanesena";
+    // }
+    // else{
+    //   echo "Informaciya NE zanesena";
+    // }
   ?> 
 
   <div class="col-sm-4 col-sm-offset-4">
