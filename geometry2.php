@@ -6,12 +6,12 @@ interface CanCountPerimeter{
 }
 
 abstract class FlatFigure  implements CanCountPerimeter {
-  abstract function perimeter();
+	abstract function perimeter();
 
-  function __toString(){
-    return get_class($this) . PHP_EOL .
-    "perimeter is equal to " . $this -> perimeter() . PHP_EOL;
-  }
+	function __toString(){
+		return get_class($this) . PHP_EOL .
+		"perimeter is equal to " . $this -> perimeter() . PHP_EOL;
+	}
 }
 
 /**
