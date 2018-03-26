@@ -72,7 +72,8 @@ class Round extends FlatFigure {
 class Octagon extends Square {
 	
 	function perimeter() {
-		return $this -> sizes[0] + $this -> sizes[1] + $this -> sizes[2] + $this -> sizes[3] + $this -> sizes[4] + $this -> sizes[5] + $this -> sizes[6] + $this -> sizes[7];
+		return array_sum($this -> sizes);
+		//return $this -> sizes[0] + $this -> sizes[1] + $this -> sizes[2] + $this -> sizes[3] + $this -> sizes[4] + $this -> sizes[5] + $this -> sizes[6] + $this -> sizes[7];
 		// return  8*($this -> sizes[0]);
 	}
 }
