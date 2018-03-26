@@ -1,8 +1,5 @@
 <?php
 
-/**
-* Реализует  механизм подсчёта.
-*/
 
 interface CanCountPerimeter{
 	function perimeter();
@@ -17,6 +14,9 @@ abstract class FlatFigure  implements CanCountPerimeter {
   }
 }
 
+/**
+* Многоугольник
+*/
 class Polygon extends FlatFigure {
 
 	public $size;
@@ -30,6 +30,9 @@ class Polygon extends FlatFigure {
 	}
 }
 
+/**
+* Прямоугольник
+*/
 class Rectangle extends Polygon {
 
 	function perimeter () {
@@ -37,6 +40,9 @@ class Rectangle extends Polygon {
 	}
 }
 
+/**
+* Квадрат
+*/
 class Square extends Rectangle {
 
 	function perimeter () {
@@ -45,7 +51,7 @@ class Square extends Rectangle {
 }
 
 /**
-* Radius Round
+* Радиус круга
 */
 class Round extends FlatFigure {
   
@@ -61,13 +67,13 @@ class Round extends FlatFigure {
 }
 
 /**
-* 
+* Восьмиугольник
 */
 class Octagon extends Square {
 	
 	function perimeter() {
-		// return $this -> sizes[0] + $this -> sizes[1] + $this -> sizes[2] + $this -> sizes[3] + $this -> sizes[4] + $this -> sizes[5] + $this -> sizes[6] + $this -> sizes[7];
-		return  8*($this -> sizes[0]) ;
+		return $this -> sizes[0] + $this -> sizes[1] + $this -> sizes[2] + $this -> sizes[3] + $this -> sizes[4] + $this -> sizes[5] + $this -> sizes[6] + $this -> sizes[7];
+		// return  8*($this -> sizes[0]);
 	}
 }
 
